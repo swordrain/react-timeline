@@ -6,6 +6,6 @@ export const Constant = {
 	},
 	StatusCircle: {
 		radius: 15, 
-		borderWidth: 5
+		borderWidth: 5,
 	}
 }

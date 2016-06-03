@@ -6,13 +6,23 @@ import NotCompletedStatus from './NotCompletedStatus';
 import HalfCompletedStatus from './HalfCompletedStatus';
 
 const styles = {
-	display: 'flex',
-	flexDirection: 'column',
-	alignItems: 'center'
+	container: {
+		display: 'flex',
+		flexDirection: 'column',
+		alignItems: 'center',
+		position: 'relative'
+	},
+	title: {
+		overflow: 'visible',
+		whiteSpace: 'nowrap',
+		position: 'absolute',
+		bottom: 45,
+	}
 }
 
 export default class StatusComponent extends Component {
 
+	
 
 	render() {
 		var status;
@@ -32,8 +42,9 @@ export default class StatusComponent extends Component {
 
 
 		return (
-				<div style={styles}>
-				{status}
+				<div style={styles.container}>
+					<span className='status-title' style={styles.title}>{this.props.title}</span>
+					{status}
 				</div>
 
 		);
