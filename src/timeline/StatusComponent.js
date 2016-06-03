@@ -22,7 +22,11 @@ const styles = {
 
 export default class StatusComponent extends Component {
 
-	
+	_clickStatus() {
+		if(this.props.status !== Constant.Status.COMPLETED){
+			this.props.showDetailPanel();
+		}
+	}
 
 	render() {
 		var status;
@@ -42,7 +46,7 @@ export default class StatusComponent extends Component {
 
 
 		return (
-				<div style={styles.container}>
+				<div className="status-component" style={styles.container} onClick={this.props.showDetailPanel}>
 					<span className='status-title' style={styles.title}>{this.props.title}</span>
 					{status}
 				</div>

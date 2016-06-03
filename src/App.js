@@ -17,10 +17,11 @@ const styles = {
 	},
 	demoContainer: {
 		width: 800,
+		height: 500,
+		paddingTop: 30,
 		backgroundColor: 'white',
 		display: 'flex',
 		justifyContent: 'center',
-		alignItems: 'center'
 	}
 };
 const demoData = [
