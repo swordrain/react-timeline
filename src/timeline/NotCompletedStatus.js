@@ -31,7 +31,7 @@ export default class NotCompletedStatus extends Component {
 	render(){
 		return (
 			<div style={styles} onMouseEnter={this._scale.bind(this)} onMouseLeave={this._scale.bind(this)} >
-				
+
 			</div>
 			)
 	}
